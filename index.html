@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXEL TRACKER</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="app">
+
+        <header>
+            <div class="logo">★ PIXEL TRACKER ★</div>
+            <p class="subtitle">YOUR DAILY QUEST SYSTEM</p>
+            <div class="date" id="date"></div>
+        </header>
+
+        <section class="stats">
+            <div class="stat-box">
+                <span>⭐ TOTAL XP</span>
+                <h2 id="xp">0</h2>
+            </div>
+
+            <div class="stat-box">
+                <span>🎯 COMPLETED</span>
+                <h2 id="completed">0 / 0</h2>
+            </div>
+        </section>
+
+        <section class="progress-section">
+            <p>DAILY PROGRESS</p>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <p id="progress-text">0% COMPLETE</p>
+        </section>
+
+        <section class="tasks-section">
+            <h3>📋 YOUR QUESTS</h3>
+
+            <form id="task-form">
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="Enter a new quest..."
+                    maxlength="60"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit">+ ADD</button>
+            </form>
+
+            <div id="task-list"></div>
+        </section>
+
+        <footer>
+            <p>KEEP GOING, PLAYER!</p>
+            <span>© 2026 PIXEL TRACKER.exe</span>
+        </footer>
+
+    </div>
+
+</body>
+</html>
